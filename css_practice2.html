@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <style>
+        .flex-dir-row {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-dir-col {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .r-div {
+            background-color: #f00;
+            width: 100%;
+            height: 100%;
+            flex: 1 1 auto;
+        }
+
+        .g-div {
+            background-color: #0f0;
+            width: 100%;
+            height: 100%;
+            flex: 1 1 auto;
+        }
+
+        .b-div {
+            background-color: #00f;
+            width: 100%;
+            height: 100%;
+            flex: 1 1 auto;
+        }
+
+        .black-ap-div {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4)
+        }
+
+        .inner-parent {
+            width: calc( 100% - 100px);
+            height: calc( 100% - 100px);
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-dir-col">
+        <div class="flex-dir-col" style="flex:1 1 auto">
+            <div class="r-div"></div>
+            <div class="g-div"></div>
+            <div class="b-div"></div>
+        </div>
+        <div class="flex-dir-row" style="flex:1 1 auto">
+            <div class="r-div"></div>
+            <div class="g-div"></div>
+            <div class="b-div"></div>
+        </div>
+        <div class="black-ap-div">
+            <div class="inner-parent">
+                <div class="flex-dir-row">
+                    <div class="flex-dir-row" style="flex:1 1 auto">
+                        <div class="r-div"></div>
+                        <div class="g-div"></div>
+                        <div class="b-div"></div>
+                    </div>
+                    <div class="flex-dir-col" style="flex:1 1 auto">
+                        <div class="r-div"></div>
+                        <div class="g-div"></div>
+                        <div class="b-div"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

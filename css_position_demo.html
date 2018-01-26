@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        .relative-div {
+            position: relative;
+            margin: 50px;
+            height: calc(100% - 100px);
+            width: calc(100% - 100px);
+            background-color: aquamarine;
+        }
+
+        .first-abs {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 80px;
+            bottom: 80px;
+            
+        }
+
+        .sec-abs {
+            position: absolute;
+            top: 0;
+            width: 80px;
+            right: -40px;
+            bottom: 0;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+        <div class="first-abs" style="background-color: red;margin-top:100px"></div>
+    <div class="relative-div">
+        <div class="first-abs" style="background-color: blue;"></div>
+        <div class="sec-abs"></div>
+    </div>
+    <div class="first-abs" style="background-color: rgba(220,110,0,0.4);"></div>
+</body>
+</html>

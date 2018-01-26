@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+        .flex {
+            display: inline-flex;
+            height: 60px;
+            margin: 5px 5px 40px;
+            border: 1px solid #000;
+            vertical-align: top;
+            width: 100%
+        }
+
+        
+
+        .flex-150 {
+            width: 80px;
+        }
+
+        .item {
+            height: 60px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .item1 {
+            flex: 1 2 500px;
+            background: #c00;
+        }
+
+        .item2 {
+            flex: 0 1 500px;
+            background: #069;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex ">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+    </div>
+</body>
+
+</html>
